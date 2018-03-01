@@ -38,3 +38,5 @@ if [ $package = "yum" ]; then
   #systemctl status dnsmasq.service
   echo "installing dnsmasq on centos completed"
 fi
+
+sleep 10
