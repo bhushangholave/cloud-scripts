@@ -31,6 +31,8 @@ else
 	if [ $package = "apt-get" ]; then
 	  echo "installing $service  on ubuntu"
 	  apt-get update -y
+	  echo "Finished update"
+	  sleep 15
 	  apt-get install $service -y  || echo " $service installation failed"
 	  update-rc.d $service enable
 	  #runlevel set
